@@ -1,2 +1,2 @@
-# GW, 9th, First python file
+# GW, 6th, First python file
 print("Hello World!")
