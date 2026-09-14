@@ -4,7 +4,6 @@ name = "Alex"
 age = 14
 
 score = 10
-score = 25
 
 height = 5.9
 city = "Denver"
@@ -17,6 +16,7 @@ print(f"Your name is {name} and it is saved at {id(name)}")
 print(f"Your age is {age} and it is saved at {id(age)}")
 
 print(f"Your score is {score} and it is saved as {id(score)}")
+score = 25
 print(f"Your score is {score} and it is saved at {id(score)}")
 
 print(f"You are {height} and it is saved at {id(height)}")
