@@ -2,10 +2,9 @@
 
 while True:
     name = input("What is your name: ").title().strip()
-    if name.isnumeric()
+    if name.isnumeric():
         print("Sorry that is not a name")
-        break
     else:
-        print("I want to know your name not a number.")
+        break
 
-print(f"hello {name}!")
+print(f"hello {name}, nice to meet you")
