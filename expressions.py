@@ -14,7 +14,7 @@ water = 60.5
 
 temperature = 68.5
 
-price = 1.99
+price = 2
 
 # expression 
 print(water*price)
