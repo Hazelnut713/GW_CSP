@@ -1,0 +1,20 @@
+# GW, Silly Sentences Assignment
+
+adjective1 = input("Give me an adjective: ")
+noun1 = input("Give me a noun: ")
+noun2 = input("Give me a noun: ")
+body_part = input("Give me a body part: ")
+adjective2 = input("Give me an adjective: ")
+adjective3 = input("Give me an adjective: ")
+noun3 = input("Give me a noun: ")
+plural_noun1 = input("Give me a plural noun: ")
+adjective4 = input("Give me an adjective: ")
+noun4 = input("Give me a noun: ")
+adjective5 = input("Give me an adjective: ")
+plural_noun2 = input("Give me a plural noun: ")
+plural_noun3 = input("Give me a plural noun: ")
+plural_noun4 = input("Give me a plural noun: ")
+adjective6 = input("Give me an adjective: ")
+noun5 = input("Give me a noun: ")
+
+print("Hello Kitty loves her " + adjective1 + " family. Her twin, Mimmy, is also her best " + noun1 + " in the whole wide " + noun2 + ". She looks just like Hello Kitty, expect she wears a yellow bow tie on her right " + body_part + ", Hello Kitty's " + adjective2 + " parents are her mama, Mary, and her papa, George. Mama is a kind and " + adjective3 + " " + noun3 + ". She loves to cook and take care of " + plural_noun1 + ". Papa is always making " + adjective4 + " jokes. He is a hardowrking " + noun4 + " and a/an " + adjective5 + " papa to Hello Kitty and Mimmy. Hello Kitty's grandma and grandpa are named Margaret and Anthony. Grandpa loves to paint " + plural_noun2 + ".  Grandma enjoys making " + plural_noun3 + " for Hello Kitty and Mimmy, and she also likes to embroider " + plural_noun4 + ". Hello Kitty's family is a very " + adjective6 + " part of her " + noun5 + "!")
