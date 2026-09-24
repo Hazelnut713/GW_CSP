@@ -7,6 +7,7 @@ lowercase = False
 number = False
 symbol = False
 count = 0
+strength = "weak"
 
 if len(password) >= 8:
     length = True
@@ -35,10 +36,17 @@ if number == True:
 if symbol == True:
     count = count + 1
 
+if count == 5:
+    strength = "strong"
+if count <= 4:
+    strength = "Medium"
+if count < 3:
+    strength = "weak"
 
 print(f"Has uppercase letter: {uppercase}")
 print(f"Has a lowercase letter: {lowercase}")
 print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
 print(f"You have done {count}/5")
+print(f"You have a {strength} password.")
 print("If you don\'t have 5/5 you should check if you have a uppercase letter, lowercase letter, a number, and a symbol.")
