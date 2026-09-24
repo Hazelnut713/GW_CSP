@@ -25,10 +25,20 @@ for letter in password:
         symbol = True
 
 if length == True:
-    count +1
+    count = count + 1
+if uppercase == True:
+    count = count + 1
+if lowercase == True:
+    count = count + 1
+if number == True:
+    count = count + 1
+if symbol == True:
+    count = count + 1
 
 
 print(f"Has uppercase letter: {uppercase}")
 print(f"Has a lowercase letter: {lowercase}")
 print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
+print(f"You have done {count}/5")
+print("If you don\'t have 5/5 you should check if you have a uppercase letter, lowercase letter, a number, and a symbol.")
