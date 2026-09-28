@@ -6,11 +6,11 @@ attemps = 1
 
 while attemps <= 6:
     while True:
-            try:
-             guess = int(input(f"Guess #(attemps): "))
-             break
-            except:
-                print("That wasn't a number")
+        try:
+            guess = int(input(f"Guess #(attemps): "))
+            break
+        except:
+            print("That wasn't a number")
 
     if guess > number:
         print("That's too high")
