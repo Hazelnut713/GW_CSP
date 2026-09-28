@@ -1,20 +1,25 @@
-# GW, Number Guessing Game
 import random
 
 print("I have a number try to guess it")
 number = random.randint(1,101)
 attemps = 1
 
-for number in range(1,3):
-    guess = input(f"Guess #{attemps}: ")
-    if guess < number:
-        attemps += 1
-        print("That is too low")
-        continue
-    elif guess > number:
-        attemps += 1
-        print("That is too high")
-        continue
+while attemps <= 6:
+    while True:
+            try:
+             guess = int(input(f"Guess #(attemps): "))
+             break
+            except:
+                print("That wasn't a number")
+
+    if guess > number:
+        print("That's too high")
+    elif guess < number:
+        print("That's too low")
     else:
-        print(f"Wow you got it right in {attemps} good job")
         break
+    attemps += 1
+if attemps <= 6:
+    print(f"Good job you guessed my number in {attemps} tries.")
+else:
+    print(f"You are out of guesses. The number was {number}. Better luck next time.")
