@@ -3,16 +3,19 @@ import random
 
 attemps = 1
 
-for number in range(1,3):
-    guess = input(f"Guess #{attemps}: ")
-    if guess < number:
-        attemps += 1
-        print("That is too low")
-        continue
-    elif guess > number:
-        attemps += 1
-        print("That is too high")
-        continue
-    else:
-        print(f"Wow you got it right in {attemps} good job")
-        break
+
+
+while attemps <= 6:
+    while True:
+        guess = input(f"Guess #{attemps}: ")
+        guess = int(guess)
+        for number in range(1,3):
+            if guess == number:
+                print(f"You got it in {attemps} good job!")
+                break
+            elif guess < number:
+                print("That was too low try again: ")
+                attemps += 1
+            else:
+                print("That was too high try again")
+                attemps += 1
